@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile Card</title>
+    <style>
+        body {
+            background-color: #f0f0f0;
+            font-family: Arial;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        .profile {
+            background-color: azure;
+            padding: 20px;
+            border-radius: 15px;
+            text-align: center;
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+            width: 300px;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        #h2first {
+            margin-top: 0px;
+        }
+        .profile img {
+            width: 120px;
+            height: 120px;
+            border-radius: 50%;
+            margin-bottom: 10px;
+        }
+        .profile ul {
+            list-style-position: inside;
+            padding: 0px;
+            text-align: center;
+        }
+        .profile button {
+            padding: 10px 20px;
+            background-color: royalblue;
+            color: white;
+            border: none;
+            border-radius: 20px;
+            cursor: pointer;
+            transition: background-color 0.2s ease, transform 0.2s ease;
+        }
+        .profile:hover {
+            transform: scale(1.04);
+            box-shadow: 0px 0px 30px rgba(0, 51, 255, 0.3);
+        }
+        .profile button:hover {
+            background-color: darkblue;
+            transform: scale(1.05);
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <div class="profile">
+            <img src="/adnan linked in pfp edit.png" alt="Adnan's Image">
+            <h2 id="h2first">Md. Adnan</h2>
+            <p>
+                I am a CSE student who loves tech, coding, and editing videos!
+            </p>
+            <h2 id="h2second">My Interests:</h2>
+            <ul>
+                <li>Coding 💻</li>
+                <li>Editing 🎥</li>
+                <li>Gaming 🎮</li>
+            </ul>
+            <button>Contact Me</button>
+        </div>
+    </main>
+</body>
+</html>

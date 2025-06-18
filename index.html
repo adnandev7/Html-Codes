@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+</head>
+<link rel="stylesheet" href="/style.css">
+<body>
+    <div class="hero">
+        <div class="hero_text">
+            <h1>Hello! I am Mohammad Adnan.</h1>
+            <p>Hi! I'm Md. Adnan, a passionate Computer Science and Engineering student at Anjuman College of Engineering, Nagpur. I'm deeply interested in web development, coding, and building digital experiences that are simple yet impactful. I love experimenting with HTML projects and growing my skills through hands-on practice. Whether it's creating responsive layouts or learning new concepts, I believe in learning by doing. I'm also someone who values traditional methods of working hard and staying consistent — one line of code at a time.</p>
+        </div>
+        <div class="hero_image">
+            <img src="/adnan linked in pfp edit.png" alt="Adnan's Image">
+        </div>
+    </div>
+    <section class="contact">
+        <h2>Contact Me</h2>
+        <form id="contact_form" class="contact_form" action="" method="post">
+            <input id="contact_name" type="text" name="name" id="text" placeholder="Enter your name..." required> 
+            <input id="contact_email" type="email" name="email" id="email" placeholder="Enter your email..." required> 
+            <textarea id="contact_msg" name="message" placeholder="Enter your message..." id="message" rows="5"></textarea>
+            <button type="submit">Submit</button>
+        </form>
+    </section>
+
+    <script>
+    const form = document.getElementById("contact_form");
+    form.addEventListener("submit", function(event){
+        event.preventDefault();
+
+        const name = document.getElementById("contact_name").value;
+        const email = document.getElementById("contact_email").value;
+        const desc = document.getElementById("contact_msg").value;
+
+        alert("Thank you " + name + " We have recieved your message");
+
+        form.reset();
+    });
+    </script>
+
+</body>
+</html>

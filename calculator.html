@@ -1,0 +1,48 @@
+<!DOCTYPE html> 
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Basic Calculator</title>
+    <link rel="stylesheet" href="calcistyle.css">
+</head>
+<body> 
+    <div class="calculator">
+    <h1> Calculator</h1>
+    <label for="first"> First Input: </label> 
+    <input type="number" name="first" id="first" placeholder="Input numbers...">
+    <label for="second"> Second Input: </label>
+    <input type="number" name="second" id="second" placeholder="Input numbers...">
+    <div>
+    <button onclick="calculate('+')"> + </button>
+    <button onclick="calculate('-')"> - </button>
+    <button onclick="calculate('*')"> * </button>
+    <button onclick="calculate('/')"> / </button>
+    </div>
+    <p id="result">Result: </p> 
+    </div>
+
+    <script> 
+        function calculate(operator) {
+            const num1= parseFloat(document.getElementById("first").value);
+            const num2= parseFloat(document.getElementById("second").value);
+            let result;
+            switch(operator) {
+                case '+': result= num1+num2;
+                break;
+                
+                case '-': result= num1-num2;
+                break;
+                
+                case '*': result= num1*num2;
+                break;
+                
+                case '/': result= num1/num2;
+                break;
+            }
+
+            document.getElementById("result").innerText = "Result: " + result;
+        }
+    </script>
+</body>
+</html>
